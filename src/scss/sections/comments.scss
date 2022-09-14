@@ -1,0 +1,8 @@
+@use '../global/functions.scss' as *;
+
+.comments {
+  max-width: 730px;
+  margin: 100px auto;
+  // margin-inline: responsive(375px, 768px, 16px, 42px);
+
+}

@@ -1,0 +1,15 @@
+.message-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  &__avatar {
+    flex-shrink: 0;
+  }
+
+  &__username {
+    @media (max-width: 768px) {
+      // width: min-content;
+    }
+  }
+}

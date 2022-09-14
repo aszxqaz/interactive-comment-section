@@ -1,0 +1,40 @@
+.reply-panel {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+
+  padding: 1.75rem;
+  background-color: white;
+  border-radius: 0.5rem;
+
+  &__avatar {
+    margin-top: 0.25rem;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+
+  &__form {
+    display: contents;
+  }
+
+  &__textarea {
+    flex-grow: 1;
+    width: 100%;
+  }
+
+  &__submit-btn {
+    margin-left: auto;
+  }
+
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+    &__textarea {
+      order: -1;
+      flex-basis: 100%;
+    }
+
+    &__avatar {
+      margin-right: auto;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+@import 'global';
+@import 'ui';
+@import 'app';
+@import 'components';
+@import 'sections';
+
+body {
+  background-color: var(--neutral-very-light-gray);
+  // background-color: #333;
+}
+
+.wrapper {
+  margin: 0 auto;
+
+  width: 85%;
+  max-width: 45.625rem;
+}

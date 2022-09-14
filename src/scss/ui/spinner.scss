@@ -1,0 +1,15 @@
+.spinner-base {
+  display: grid;
+  place-items: center;
+
+  animation: rotation 0.5s;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360);
+  }
+}

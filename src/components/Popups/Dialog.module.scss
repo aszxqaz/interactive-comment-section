@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 400px;
+  padding: 28px;
+
+  background-color: white;
+  border-radius: 10px;
+}
+
+.title {
+  margin-bottom: 26px;
+
+  color: rgb(55 63 76);
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.text {
+  margin-bottom: 21px;
+
+  color: rgb(113 114 116);
+}
+
+.actions {
+  display: flex;
+  gap: 15px;
+}
+
+.button {
+  width: 100%;
+  font-size: 0.9rem;
+  padding: 0.7rem;
+}
+
+.button-default {
+  background-color: var(--primary-moderate-blue) !important;
+}
+
+.button-secondary {
+  background-color: var(--neutral-grayish-blue) !important;
+}
+
+.button-danger {
+  background-color: var(--primary-soft-red) !important;
+}

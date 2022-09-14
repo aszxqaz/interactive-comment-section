@@ -1,0 +1,21 @@
+.reply-panel {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+
+  padding: 1.75rem;
+  background-color: white;
+  border-radius: 0.5rem;
+
+  &__avatar {
+    margin-top: 0.25rem;
+  }
+
+  &__form {
+    display: contents;
+  }
+
+  &__textarea {
+    flex-grow: 1;
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "name": "interactive-comments-section",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "dbrestart": "npx prisma db push && npx prisma generate"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^7.4.0",
+    "@prisma/client": "^4.2.1",
+    "@tanstack/react-query": "^4.2.3",
+    "@tanstack/react-query-devtools": "^4.2.3",
+    "@types/cookie": "^0.5.1",
+    "@types/jsonwebtoken": "^8.5.9",
+    "axios": "^0.27.2",
+    "class-validator": "^0.13.2",
+    "cookie": "^0.5.0",
+    "immer": "^9.0.15",
+    "jsonwebtoken": "^8.5.1",
+    "next": "12.2.5",
+    "next-auth": "^4.10.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.13",
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
+    "eslint": "8.22.0",
+    "eslint-config-next": "12.2.5",
+    "prisma": "^4.2.1",
+    "sass": "^1.54.5",
+    "typescript": "^4.7.4"
+  }
+}

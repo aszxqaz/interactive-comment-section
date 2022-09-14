@@ -1,0 +1,24 @@
+@use 'sass:math' as math;
+
+@function responsive($from, $to, $min, $max) {
+  $div: calc(($to - $from) / ($max - $min));
+
+  @return max($min, min(calc(((100vw - $from) / $div) + $min), $max));
+}
+
+@function resStandard($min, $max) {
+  @return responsive(375px, 1440px, $min, $max);
+}
+
+@function useRatio($desktop, $ratio) {
+  $mobile: calc($desktop * $ratio);
+  @return resStandard($mobile, $desktop);
+}
+
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+
+  @return $number;
+}

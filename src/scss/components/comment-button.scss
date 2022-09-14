@@ -1,0 +1,23 @@
+.comment-button {
+  display: grid;
+  place-items: center;
+  grid-auto-flow: column;
+  gap: 0.5rem;
+
+  height: 1.5rem;
+
+  font-weight: var(--fw-500);
+  color: #5357B6;
+  svg {
+    fill: currentColor;
+  }
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.comment-button--delete {
+  color: #ED6368;
+
+}
